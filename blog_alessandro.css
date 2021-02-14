@@ -1,0 +1,269 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1{
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: 'Pangolin', cursive;
+}
+
+.home{
+  width: 100%;
+  height: 50rem;
+  position: relative;
+  background-image: url("img/IMG_20190915_183829-01.jpeg");
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: round;
+}
+
+#navbar {
+  overflow: hidden;
+  background-color: rgba(100, 0, 0, 0.9);
+  padding: 90px 10px;
+  transition: 0.8s;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 99;
+}
+
+.navbar a{
+  font-size: 1.5rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin-left: 12rem;
+}
+
+.navbar a:hover{
+  text-decoration: underline;
+}
+
+.centered-home{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2%;
+}
+
+.white-line{
+  width: 10rem;
+  height: 0.2rem;
+  background-color: black;
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+#nome{
+  text-align: center;
+  font-size: 2rem;
+  display: inline-block;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#job{
+  font-size: 3rem;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+}
+
+.final-home{
+  height: 4rem;
+  position: absolute;
+  bottom: 12rem;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.final-home > span{
+  font-size: 1.2rem;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: black;
+}
+
+#arrow-down{
+  width: 4rem;
+  height: 2rem;
+  display: block;
+  margin: auto;
+  z-index: 99;
+  animation-name: arrow;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes arrow {
+  0%   {margin-top: 5px;}
+  20%  {margin-top: 9px;}
+  40%  {margin-top: 13x;}
+  60% {margin-top: 18px;}
+  80% {margin-top: 22px;}
+  100% {margin-top: 26px;}
+}
+  
+.about-me{
+  width: 100%;
+  height: 30rem;
+  text-align: center;
+  padding: 3rem;
+}
+
+#myPhoto{
+  width: 13rem;
+  height: 14rem;
+  margin-top: 1.5rem;
+  border-radius: 50%;
+  border: 1px solid green;
+  box-shadow: 15px 15px 10px grey;
+      -moz-box-shadow: 10px 10px 5px grey;
+      -webkit-box-shadow: 10px 10px 5px grey;
+      -khtml-box-shadow: 10px 10px 5px grey;
+}
+
+.about-me > p{
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+.projects{
+  width: 100%;
+  height: 50rem;
+  padding: 4rem;
+  background-image: url("img/IMG_20190908_111849_934.jpg");
+  background-attachment: fixed;
+  background-size: auto;
+  background-repeat: round;
+}
+
+.clearfix{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* .projects > h1{
+  text-align: center;
+  font-size: 2.5rem;
+} */
+
+.container-projects{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 0 3%;
+}
+
+/* .project{
+  width: calc(85% / 2 - 1rem);  
+  height: 20rem;
+  border: 1px solid red;
+  float: left;
+  margin-top: 3rem;  
+} */
+
+.project{
+  width: 24rem;
+  height: 26rem;
+  margin-top: 3rem;
+  border-radius: 10px;
+  background-color: rgb(240, 240, 239);
+  padding: 1rem;
+}
+
+.img-project{
+  width: 100%;
+  height: 60%;
+}
+
+.img-project > img{
+  width: 100%;
+  height: 100%;
+}
+
+.text-project{
+  width: 100%;
+  height: 20%;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.addressing{
+  width: 100%;
+  height: calc(20% - 0.5rem);
+  text-align: center;
+}
+
+#try-it{
+  width: 4.3rem;
+  height: 2rem;
+  background-color: rgb(10, 148, 240);
+  margin: auto;
+  padding: 2px;
+  border-radius: 50%;
+}
+
+#try-it:hover{
+  box-shadow: 5px 5px 5px black;
+  -moz-box-shadow: 5px 5px 5px black;
+  -webkit-box-shadow: 5px 5px 5px black;
+  -khtml-box-shadow: 5px 5px 5px black;
+}
+
+#try-it > a{
+  text-decoration: none;
+  color:wheat;
+  font-size: 1.5rem;
+  font-family:Arial, Helvetica, sans-serif;
+}
+
+#repository{
+  margin-top: 0.5rem;
+}
+
+#repository > a{
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+#repository > a:hover{
+  text-decoration: underline;
+}
+
+.contacts{
+  width: 100%;
+  height: 20rem;
+  background-image: linear-gradient(rgb(152, 185, 223), rgb(88, 24, 24));
+  text-align: center;
+  padding: 5rem;
+}
+
+.contacts-list{
+  width: 40rem;
+  height: 3rem;
+  margin: auto;
+  margin-top: 2rem;
+}
+
+a > img{
+  height: 100%;
+  margin-left: 4rem;
+}
+
+
+
+
+
+
+
+
